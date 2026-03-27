@@ -53,7 +53,7 @@ export default function HeroSection() {
             >
               <div className="relative h-48 w-48 overflow-hidden rounded-full border-4 border-amber-400/80 shadow-2xl md:h-56 md:w-56">
                 <img
-                  src="https://cdn.poehali.dev/projects/719794a2-ba3f-467c-85bb-0250599076ef/files/6f6ff68a-30ad-4431-9de2-fb0908c1de32.jpg"
+                  src="https://cdn.poehali.dev/projects/719794a2-ba3f-467c-85bb-0250599076ef/bucket/a4bf4f35-6830-444c-9927-2b37cbb0e8d9.jpg"
                   alt="Жиганов Филипп Ишханович"
                   className="h-full w-full object-cover"
                 />
