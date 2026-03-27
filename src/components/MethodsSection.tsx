@@ -12,6 +12,7 @@ const articles = [
     tags: ['5 класс', 'Исследование', 'Первоисточники'],
     readTime: '12 мин',
     date: '15 марта 2026',
+    url: 'https://nsportal.ru/shkola/istoriya/library/2012/06/11/metodicheskaya-razrabotka-uroka-po-temedrevniy-egipet-v-5-klasse',
   },
   {
     id: 2,
@@ -21,6 +22,7 @@ const articles = [
     tags: ['6 класс', 'Ролевая игра', 'Дискуссия'],
     readTime: '15 мин',
     date: '5 марта 2026',
+    url: 'https://nsportal.ru/shkola/istoriya/library/2013/04/14/metodicheskaya-razrabotka-uroka-senory-i-vassaly',
   },
   {
     id: 3,
@@ -30,6 +32,7 @@ const articles = [
     tags: ['7 класс', 'Технол. карта', 'Картография'],
     readTime: '10 мин',
     date: '22 февраля 2026',
+    url: 'https://nsportal.ru/shkola/istoriya/library/2020/01/13/metodicheskaya-razrabotka-uroka-istorii-v-7-klasse-velikie',
   },
   {
     id: 4,
@@ -39,6 +42,7 @@ const articles = [
     tags: ['9 класс', 'Серия уроков', 'Документы'],
     readTime: '20 мин',
     date: '10 февраля 2026',
+    url: 'https://nsportal.ru/shkola/istoriya/library/2014/02/10/uchebno-metodicheskaya-razrabotka-uroka-po-teme-prichiny-i',
   },
   {
     id: 5,
@@ -48,6 +52,7 @@ const articles = [
     tags: ['10 класс', 'Дебаты', 'Риторика'],
     readTime: '18 мин',
     date: '28 января 2026',
+    url: 'https://nsportal.ru/shkola/istoriya/library/2021/01/22/povtoritelno-obobshchayushchiy-urok-po-teme-puteshestvie-v',
   },
   {
     id: 6,
@@ -57,6 +62,7 @@ const articles = [
     tags: ['8–11 класс', 'Патриотизм', 'Проект'],
     readTime: '25 мин',
     date: '15 января 2026',
+    url: 'https://nsportal.ru/shkola/istoriya/library/2023/03/11/pervaya-mirovaya-voyna-konspekt-uroka-v-10-klasse',
   },
 ];
 
@@ -139,7 +145,18 @@ export default function MethodsSection() {
                 ))}
               </div>
 
-              <p className="text-xs text-white/30">{article.date}</p>
+              <div className="flex items-center justify-between">
+                <p className="text-xs text-white/30">{article.date}</p>
+                <a
+                  href={article.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1.5 rounded-full border border-amber-400/30 px-3 py-1.5 text-xs font-medium text-amber-400 transition-all hover:bg-amber-400 hover:text-neutral-900"
+                >
+                  <Icon name="ExternalLink" size={11} />
+                  Открыть на nsportal.ru
+                </a>
+              </div>
             </div>
           ))}
         </div>
